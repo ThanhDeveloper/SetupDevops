@@ -11,12 +11,11 @@ if [ -x "$(command -v docker)" ]; then
     apt-get upgrade docker-ce
 else
     echo "Installing docker"
-    apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
-    docker -v
+    apt install docker.io
 fi
 
 apt-get install docker-compose-plugin
-docker compose version
+
 echo "Docker installed"
 
 #install vcs
@@ -29,5 +28,8 @@ else
     git --version
     echo "VCS installed"
 fi
+
+docker -v
+docker compose version
 
 echo "Setup completed!"
