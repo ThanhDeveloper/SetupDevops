@@ -5,6 +5,9 @@ echo "Script is running"
 apt-get update
 apt-get upgrade
 
+#install ec2 instance connect
+sudo apt-get install ec2-instance-connect 
+
 # install docker
 if [ -x "$(command -v docker)" ]; then
     echo "docker installed -- ignore and update"
