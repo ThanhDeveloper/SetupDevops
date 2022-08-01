@@ -16,5 +16,8 @@ Status: active
 
 ## Allow setting port forwarding
 ```
-sudo ufw allow 22
+$ sudo ufw allow 22
+$ sudo ufw allow http
+$ sudo ufw allow https
 ```
+
